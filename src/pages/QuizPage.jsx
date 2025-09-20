@@ -38,8 +38,9 @@ export default function QuizPage() {
   return (
     <>
         {quizData[quizIndex] && <Display>
-            {`Q1. ${quizData[quizIndex].question}`}
+            {`Q${quizIndex + 1}. ${quizData[quizIndex].question}`}
         </Display>}
+        <br />
         {quizData[quizIndex] &&
             quizData[quizIndex].options.map((option, index) => {
                 return (
